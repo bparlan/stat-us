@@ -1,0 +1,8 @@
+D:\Projects\c#\Stat-us\Stat-us\bin\Debug\Stat-us.exe
+D:\Projects\c#\Stat-us\Stat-us\bin\Debug\Stat-us.pdb
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.Properties.Resources.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat-us.exe
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat-us.pdb
