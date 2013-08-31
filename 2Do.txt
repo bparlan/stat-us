@@ -5,3 +5,6 @@
 Þimdi bu benim deðiþtirdiðim þeyler 
 seninkilerde burda olacak commit edince
 otomatik merge edecek
+
+
+fazladan biþeyler
