@@ -22,5 +22,20 @@ namespace Stat_us
             List<String> programs = stat.GetProcesses();
             lstApplications.DataSource = programs;
         }
+
+        private void btnShowApps_Click(object sender, EventArgs e)
+        {
+            Cstatus stat = new Cstatus();
+            List<String> programs = stat.GetApplications();
+            lstApplications.DataSource = programs;
+
+        }
+
+        private void btnShowInstalled_Click(object sender, EventArgs e)
+        {
+            Cstatus stat = new Cstatus();
+            List<String> programs = stat.GetInstalled2();
+            lstApplications.DataSource = programs;
+        }
     }
 }
