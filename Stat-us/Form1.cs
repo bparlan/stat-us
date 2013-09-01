@@ -15,5 +15,12 @@ namespace Stat_us
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cstatus stat = new Cstatus();
+            List<String> programs = stat.GetProcesses();
+            lstApplications.DataSource = programs;
+        }
     }
 }
