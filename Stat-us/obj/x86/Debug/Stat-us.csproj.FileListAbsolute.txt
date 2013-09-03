@@ -7,3 +7,11 @@ D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat-us.exe
 D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat-us.pdb
 D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.Form1.resources
+D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat-us.exe
+D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat-us.pdb
+D:\Documents\stat-us\Stat-us\bin\Debug\Stat-us.exe
+D:\Documents\stat-us\Stat-us\bin\Debug\Stat-us.pdb
+D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat-us.csprojResolveAssemblyReference.cache
+D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat_us.Form1.resources
+D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat_us.Properties.Resources.resources
+D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat-us.csproj.GenerateResource.Cache

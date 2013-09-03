@@ -20,7 +20,16 @@ namespace Stat_us
         {
             Cstatus stat = new Cstatus();
             List<String> programs = stat.GetProcesses();
+
+            StringBuilder sb = stat.GetApplications();
+
             lstApplications.DataSource = programs;
+            lstApplications2.DataSource = sb;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,15 +30,16 @@
         {
             this.btnShow = new System.Windows.Forms.Button();
             this.lstApplications = new System.Windows.Forms.ListBox();
+            this.lstApplications2 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnShow
             // 
             this.btnShow.Location = new System.Drawing.Point(23, 31);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(159, 23);
+            this.btnShow.Size = new System.Drawing.Size(111, 23);
             this.btnShow.TabIndex = 0;
-            this.btnShow.Text = "Show applications";
+            this.btnShow.Text = "Show Applications";
             this.btnShow.UseVisualStyleBackColor = true;
             this.btnShow.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -47,18 +48,29 @@
             this.lstApplications.FormattingEnabled = true;
             this.lstApplications.Location = new System.Drawing.Point(23, 101);
             this.lstApplications.Name = "lstApplications";
-            this.lstApplications.Size = new System.Drawing.Size(481, 264);
+            this.lstApplications.Size = new System.Drawing.Size(256, 264);
             this.lstApplications.TabIndex = 1;
+            // 
+            // lstApplications2
+            // 
+            this.lstApplications2.FormattingEnabled = true;
+            this.lstApplications2.Location = new System.Drawing.Point(285, 101);
+            this.lstApplications2.Name = "lstApplications2";
+            this.lstApplications2.Size = new System.Drawing.Size(219, 264);
+            this.lstApplications2.TabIndex = 2;
+            this.lstApplications2.UseTabStops = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 392);
+            this.Controls.Add(this.lstApplications2);
             this.Controls.Add(this.lstApplications);
             this.Controls.Add(this.btnShow);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "stat.us";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -67,6 +79,7 @@
 
         private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.ListBox lstApplications;
+        private System.Windows.Forms.ListBox lstApplications2;
     }
 }
 
