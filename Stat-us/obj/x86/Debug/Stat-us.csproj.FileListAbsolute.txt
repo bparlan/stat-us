@@ -15,3 +15,11 @@ D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat-us.csprojResolveAssemblyReferenc
 D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat_us.Form1.resources
 D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat_us.Properties.Resources.resources
 D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat-us.csproj.GenerateResource.Cache
+C:\Stat-us\Stat-us\obj\x86\Debug\Stat-us.exe
+C:\Stat-us\Stat-us\obj\x86\Debug\Stat-us.pdb
+C:\Stat-us\Stat-us\obj\x86\Debug\Stat-us.csprojResolveAssemblyReference.cache
+C:\Stat-us\Stat-us\obj\x86\Debug\Stat_us.Form1.resources
+C:\Stat-us\Stat-us\obj\x86\Debug\Stat_us.Properties.Resources.resources
+C:\Stat-us\Stat-us\obj\x86\Debug\Stat-us.csproj.GenerateResource.Cache
+C:\Stat-us\Stat-us\bin\Debug\Stat-us.exe
+C:\Stat-us\Stat-us\bin\Debug\Stat-us.pdb

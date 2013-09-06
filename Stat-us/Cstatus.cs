@@ -39,11 +39,7 @@ namespace Stat_us
          * 2- Process Name ile uğraşmadan düzgün uygulama ismi elde etmiş oluruz.
          * */
 
-<<<<<<< HEAD
-        public StringBuilder GetApplications()
-=======
         public  List<String>  GetApplications()
->>>>>>> cd62b6f4f10155e96de8c29f21889f18c83f632a
         {
             List<String> programNames = new List<string>();
             foreach (Process p in Process.GetProcesses("."))
@@ -52,20 +48,12 @@ namespace Stat_us
                 {
                     if (p.MainWindowTitle.Length > 0)
                     {
-<<<<<<< HEAD
-                        //Console.WriteLine("Window Title: " + p.MainWindowTitle.ToString());
-                        sb.Append("Window Title: " + p.MainWindowTitle.ToString() + Environment.NewLine);
-=======
                         programNames.Add(p.MainWindowTitle.ToString());
->>>>>>> cd62b6f4f10155e96de8c29f21889f18c83f632a
                     }
                 }
                 catch { }
             }
 
-<<<<<<< HEAD
-            return sb.ToString();
-=======
             return programNames;
         }
 
@@ -104,7 +92,6 @@ namespace Stat_us
             }
 
             return programNames;
->>>>>>> cd62b6f4f10155e96de8c29f21889f18c83f632a
         }
 
 

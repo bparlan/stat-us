@@ -16,21 +16,19 @@ namespace Stat_us
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Cstatus stat = new Cstatus();
-            List<String> programs = stat.GetProcesses();
-
-            StringBuilder sb = stat.GetApplications();
-
-            lstApplications.DataSource = programs;
-            lstApplications2.DataSource = sb;
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void btnShowProcess_Click(object sender, EventArgs e)
+        {
+            Cstatus stat = new Cstatus();
+            List<String> programs = stat.GetProcesses();
+            
+            lstApplications.DataSource = programs;
+        }
+
 
         private void btnShowApps_Click(object sender, EventArgs e)
         {

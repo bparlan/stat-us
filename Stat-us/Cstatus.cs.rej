@@ -1,0 +1,55 @@
+diff a/Stat-us/Cstatus.cs b/Stat-us/Cstatus.cs	(rejected hunks)
+@@ -10,19 +10,33 @@
+     class Cstatus
+     {
+ 
++        
++        
++         /*
++          * Process EXE'leri Loadlıyor ve listeliyor
++          */
++         
+         public  List<String> GetProcesses()
+         {
+             List<String> programNames = new List<string>();
+             ManagementClass MgmtClass = new ManagementClass("Win32_Process");
++
+             foreach (ManagementObject mo in MgmtClass.GetInstances())
+             {
+-                programNames.Add("Name:" + mo["Name"] + "ID:" + mo["ProcessId"]);
++                programNames.Add("Name: " + mo["Name"] + "\t\t ID: " + mo["ProcessId"] + "\t\t Desc: " + mo["OSName"]);
+             }
+ 
+-                return programNames;
++            return programNames;
+         }
++         
++
++        /*
++         * WindowTitle'dan isimleri loadlarsak
++         * 1- "windows" çalışmayan process'lerden kurtulmuş oluruz
++         * 2- Process Name ile uğraşmadan düzgün uygulama ismi elde etmiş oluruz.
++         * */
+ 
+-        public  void GetApplications()
++        public StringBuilder GetApplications()
+         {
+             StringBuilder sb = new StringBuilder();
+             foreach (Process p in Process.GetProcesses("."))
+@@ -31,11 +45,14 @@
+                 {
+                     if (p.MainWindowTitle.Length > 0)
+                     {
+-                        Console.WriteLine("Window Title:" + p.MainWindowTitle.ToString());
++                        //Console.WriteLine("Window Title: " + p.MainWindowTitle.ToString());
++                        sb.Append("Window Title: " + p.MainWindowTitle.ToString() + Environment.NewLine);
+                     }
+                 }
+                 catch { }
+             }
++
++            return sb.ToString();
+         }
+     }
+ }
+\ No newline at end of file
