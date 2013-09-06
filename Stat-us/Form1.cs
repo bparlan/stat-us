@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace Stat_us
 {
+    
     public partial class Form1 : Form
     {
         public Form1()
@@ -43,6 +45,11 @@ namespace Stat_us
             Cstatus stat = new Cstatus();
             List<String> programs = stat.GetInstalled2();
             lstApplications.DataSource = programs;
+        }
+
+        private void sqlkayit_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

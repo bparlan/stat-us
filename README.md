@@ -1,4 +1,4 @@
-stat-us
+stat.us
 =======
 
 Stat &amp; Status Tracking Program.

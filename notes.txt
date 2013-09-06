@@ -1,0 +1,11 @@
+CREATE TABLE [stats] (
+[program_id] INTEGER  NOT NULL PRIMARY KEY,
+[program_exe] VARCHAR(64)  NULL,
+[program_name] VARCHAR(64)  NULL,
+[program_category] INTEGER  NULL,
+[program_location] VARCHAR(128)  NULL,
+[usage_time_idle] TIME  NULL,
+[usage_time_active] TIME  NULL,
+[counter_idle] TIMESTAMP  NULL,
+[counter_active] TIMESTAMP  NULL
+)

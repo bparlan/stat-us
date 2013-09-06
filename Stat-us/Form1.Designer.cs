@@ -32,6 +32,7 @@
             this.lstApplications = new System.Windows.Forms.ListBox();
             this.btnShowApps = new System.Windows.Forms.Button();
             this.btnShowInstalled = new System.Windows.Forms.Button();
+            this.sqlkayit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowProcess
@@ -72,11 +73,22 @@
             this.btnShowInstalled.UseVisualStyleBackColor = true;
             this.btnShowInstalled.Click += new System.EventHandler(this.btnShowInstalled_Click);
             // 
+            // sqlkayit
+            // 
+            this.sqlkayit.Location = new System.Drawing.Point(412, 374);
+            this.sqlkayit.Name = "sqlkayit";
+            this.sqlkayit.Size = new System.Drawing.Size(75, 23);
+            this.sqlkayit.TabIndex = 4;
+            this.sqlkayit.Text = "SQL Kayit";
+            this.sqlkayit.UseVisualStyleBackColor = true;
+            this.sqlkayit.Click += new System.EventHandler(this.sqlkayit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 392);
+            this.ClientSize = new System.Drawing.Size(512, 407);
+            this.Controls.Add(this.sqlkayit);
             this.Controls.Add(this.btnShowInstalled);
             this.Controls.Add(this.btnShowApps);
             this.Controls.Add(this.lstApplications);
@@ -94,6 +106,7 @@
         private System.Windows.Forms.ListBox lstApplications;
         private System.Windows.Forms.Button btnShowApps;
         private System.Windows.Forms.Button btnShowInstalled;
+        private System.Windows.Forms.Button sqlkayit;
     }
 }
 

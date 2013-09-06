@@ -13,8 +13,6 @@ namespace Stat_us
     class Cstatus
     {
 
-        
-        
          /*
           * Process EXE'leri Loadlıyor ve listeliyor
           */
