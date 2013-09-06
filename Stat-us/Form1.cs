@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,13 @@ namespace Stat_us
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            string BaglantiMetni = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Stat-us/Stat-us/stats.mdb";
+            OleDbConnection yeniBaglanti = new OleDbConnection(BaglantiMetni);
+            OleDbDataAdapter yeniDataAdapter = new OleDbDataAdapter("SELECT * FROM statsdb", BaglantiMetni);
+            DataSet yeniDataSet = new DataSet();
+            yeniDataAdapter.Fill(yeniDataSet);
+            GridView1.DataSource = yeniDataSet;
+            GridView1.DataMember = yeniDataSet.Tables[0].ToString();
         }
 
         private void btnShowProcess_Click(object sender, EventArgs e)

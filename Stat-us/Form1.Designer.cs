@@ -33,6 +33,8 @@
             this.btnShowApps = new System.Windows.Forms.Button();
             this.btnShowInstalled = new System.Windows.Forms.Button();
             this.sqlkayit = new System.Windows.Forms.Button();
+            this.GridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.GridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnShowProcess
@@ -75,7 +77,7 @@
             // 
             // sqlkayit
             // 
-            this.sqlkayit.Location = new System.Drawing.Point(412, 374);
+            this.sqlkayit.Location = new System.Drawing.Point(23, 371);
             this.sqlkayit.Name = "sqlkayit";
             this.sqlkayit.Size = new System.Drawing.Size(75, 23);
             this.sqlkayit.TabIndex = 4;
@@ -83,11 +85,20 @@
             this.sqlkayit.UseVisualStyleBackColor = true;
             this.sqlkayit.Click += new System.EventHandler(this.sqlkayit_Click);
             // 
+            // GridView1
+            // 
+            this.GridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridView1.Location = new System.Drawing.Point(23, 401);
+            this.GridView1.Name = "GridView1";
+            this.GridView1.Size = new System.Drawing.Size(240, 150);
+            this.GridView1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 407);
+            this.ClientSize = new System.Drawing.Size(513, 552);
+            this.Controls.Add(this.GridView1);
             this.Controls.Add(this.sqlkayit);
             this.Controls.Add(this.btnShowInstalled);
             this.Controls.Add(this.btnShowApps);
@@ -96,6 +107,7 @@
             this.Name = "Form1";
             this.Text = "stat.us";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.GridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,6 +119,7 @@
         private System.Windows.Forms.Button btnShowApps;
         private System.Windows.Forms.Button btnShowInstalled;
         private System.Windows.Forms.Button sqlkayit;
+        private System.Windows.Forms.DataGridView GridView1;
     }
 }
 
