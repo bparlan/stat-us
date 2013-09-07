@@ -21,7 +21,7 @@ namespace Stat_us
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string BaglantiMetni = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Stat-us/Stat-us/stats.mdb";
+            string BaglantiMetni = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|/stats.mdb";
             OleDbConnection yeniBaglanti = new OleDbConnection(BaglantiMetni);
             OleDbDataAdapter yeniDataAdapter = new OleDbDataAdapter("SELECT * FROM statsdb", BaglantiMetni);
             DataSet yeniDataSet = new DataSet();
@@ -34,7 +34,6 @@ namespace Stat_us
         {
             Cstatus stat = new Cstatus();
             List<String> programs = stat.GetProcesses();
-            
             lstApplications.DataSource = programs;
         }
 
@@ -56,7 +55,8 @@ namespace Stat_us
 
         private void sqlkayit_Click(object sender, EventArgs e)
         {
-           
+
+            MessageBox.Show(lstApplications.SelectedItem.ToString() + "\n" + "deneme");
         }
     }
 }

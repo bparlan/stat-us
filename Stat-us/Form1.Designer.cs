@@ -90,7 +90,7 @@
             this.GridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridView1.Location = new System.Drawing.Point(23, 401);
             this.GridView1.Name = "GridView1";
-            this.GridView1.Size = new System.Drawing.Size(240, 150);
+            this.GridView1.Size = new System.Drawing.Size(464, 139);
             this.GridView1.TabIndex = 5;
             // 
             // Form1

@@ -24,7 +24,7 @@ namespace Stat_us
 
             foreach (ManagementObject mo in MgmtClass.GetInstances())
             {
-                programNames.Add("Name: " + mo["Name"] + "\t\t ID: " + mo["ProcessId"] + "\t\t Desc: " + mo["OSName"]);
+                programNames.Add("Name: " + mo["Name"] + "\t\t ID: " + mo["ProcessId"] + "\t\t Path: " + mo["ExecutablePath"]);
             }
 
             return programNames;
@@ -55,7 +55,7 @@ namespace Stat_us
             return programNames;
         }
 
-
+        /*
         public List<String> GetInstalled()
         {
             List<String> programNames = new List<string>();
@@ -66,8 +66,8 @@ namespace Stat_us
             }
 
             return programNames;
-        }
-
+        }*/
+        
         public List<String> GetInstalled2()
         {
             string registry_key = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";

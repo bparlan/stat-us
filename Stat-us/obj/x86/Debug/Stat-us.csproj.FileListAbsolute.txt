@@ -23,3 +23,13 @@ C:\Stat-us\Stat-us\obj\x86\Debug\Stat_us.Properties.Resources.resources
 C:\Stat-us\Stat-us\obj\x86\Debug\Stat-us.csproj.GenerateResource.Cache
 C:\Stat-us\Stat-us\bin\Debug\Stat-us.exe
 C:\Stat-us\Stat-us\bin\Debug\Stat-us.pdb
+C:\Status\Stat-us\obj\x86\Debug\Stat-us.exe
+C:\Status\Stat-us\obj\x86\Debug\Stat-us.pdb
+C:\Status\Stat-us\bin\Debug\stats.mdb
+C:\Status\Stat-us\bin\Debug\Stat-us.exe.config
+C:\Status\Stat-us\bin\Debug\Stat-us.exe
+C:\Status\Stat-us\bin\Debug\Stat-us.pdb
+C:\Status\Stat-us\obj\x86\Debug\Stat-us.csprojResolveAssemblyReference.cache
+C:\Status\Stat-us\obj\x86\Debug\Stat_us.Form1.resources
+C:\Status\Stat-us\obj\x86\Debug\Stat_us.Properties.Resources.resources
+C:\Status\Stat-us\obj\x86\Debug\Stat-us.csproj.GenerateResource.Cache
