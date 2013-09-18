@@ -37,6 +37,12 @@ namespace Stat_us
          * 1- "windows" çalışmayan process'lerden kurtulmuş oluruz
          * 2- Process Name ile uğraşmadan düzgün uygulama ismi elde etmiş oluruz.
          * */
+        /*
+         * Asıl amaç çalışan "exe" leri toplamak değil mi ?
+         * eğer sadece windows ları alırsan elinde sadece title bilgisi olur oda sürekli değişebilir
+         * örneğin chrome da şimdi youtube açık ve title olarak youtube yazıyor.
+         * bence takip sistemi "exe" bazlı olmalı
+         */
         
         public  List<String>  GetApplications()
         {
