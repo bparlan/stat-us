@@ -6,7 +6,6 @@ D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat-us.exe
 D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat-us.pdb
-D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.Form1.resources
 D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat-us.exe
 D:\Documents\stat-us\Stat-us\obj\x86\Debug\Stat-us.pdb
 D:\Documents\stat-us\Stat-us\bin\Debug\Stat-us.exe
@@ -37,3 +36,8 @@ C:\Stat-us\Stat-us\bin\Debug\stats.mdb
 C:\Stat-us\Stat-us\obj\x86\Debug\Stat_us.AboutBox1.resources
 C:\Stat-us\Stat-us\obj\x86\Debug\Stat_us.Control.resources
 C:\Stat-us\Stat-us\obj\x86\Debug\Stat_us.Main.resources
+D:\Projects\c#\stat-us\Stat-us\bin\Debug\Stat-us.exe.config
+D:\Projects\c#\stat-us\Stat-us\bin\Debug\stats.mdb
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.AboutBox1.resources
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.Control.resources
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.Main.resources

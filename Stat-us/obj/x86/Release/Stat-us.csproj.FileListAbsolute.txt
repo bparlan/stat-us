@@ -9,3 +9,16 @@ C:\Stat-us\Stat-us\obj\x86\Release\Stat-us.csprojResolveAssemblyReference.cache
 C:\Stat-us\Stat-us\obj\x86\Release\Stat_us.AboutBox1.resources
 C:\Stat-us\Stat-us\obj\x86\Release\Stat_us.Control.resources
 C:\Stat-us\Stat-us\obj\x86\Release\Stat_us.Main.resources
+D:\Projects\c#\stat-us\Stat-us\bin\Release\stats.mdb
+D:\Projects\c#\stat-us\Stat-us\bin\Release\Stat-us.exe.config
+D:\Projects\c#\stat-us\Stat-us\bin\Release\Stat-us.exe
+D:\Projects\c#\stat-us\Stat-us\bin\Release\Stat-us.pdb
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat_us.AboutBox1.resources
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat_us.Control.resources
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat_us.Main.resources
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat_us.Properties.Resources.resources
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat-us.exe
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat-us.pdb
