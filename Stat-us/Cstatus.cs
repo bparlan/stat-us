@@ -15,7 +15,7 @@ namespace Stat_us
 
          /*
           * Process EXE'leri Loadlıyor ve listeliyor
-          */
+          
          
         public  List<String> GetProcesses()
         {
@@ -29,6 +29,7 @@ namespace Stat_us
 
             return programNames;
         }
+          */
          
 
         /*
@@ -36,7 +37,7 @@ namespace Stat_us
          * 1- "windows" çalışmayan process'lerden kurtulmuş oluruz
          * 2- Process Name ile uğraşmadan düzgün uygulama ismi elde etmiş oluruz.
          * */
-
+        
         public  List<String>  GetApplications()
         {
             List<String> programNames = new List<string>();
@@ -67,7 +68,7 @@ namespace Stat_us
 
             return programNames;
         }*/
-        
+        /*
         public List<String> GetInstalled2()
         {
             string registry_key = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
@@ -90,7 +91,7 @@ namespace Stat_us
             }
 
             return programNames;
-        }
+        }*/
 
 
     }

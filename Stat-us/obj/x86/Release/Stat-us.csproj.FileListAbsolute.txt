@@ -5,3 +5,7 @@ C:\Stat-us\Stat-us\obj\x86\Release\Stat_us.Properties.Resources.resources
 C:\Stat-us\Stat-us\obj\x86\Release\Stat-us.csproj.GenerateResource.Cache
 C:\Stat-us\Stat-us\obj\x86\Release\Stat-us.exe
 C:\Stat-us\Stat-us\obj\x86\Release\Stat-us.pdb
+C:\Stat-us\Stat-us\obj\x86\Release\Stat-us.csprojResolveAssemblyReference.cache
+C:\Stat-us\Stat-us\obj\x86\Release\Stat_us.AboutBox1.resources
+C:\Stat-us\Stat-us\obj\x86\Release\Stat_us.Control.resources
+C:\Stat-us\Stat-us\obj\x86\Release\Stat_us.Main.resources
