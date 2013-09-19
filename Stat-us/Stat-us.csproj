@@ -74,6 +74,7 @@
     <Compile Include="AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ccategories.cs" />
     <Compile Include="Cdatabase.cs" />
     <Compile Include="Cstatus.cs" />
     <Compile Include="Control.cs">
