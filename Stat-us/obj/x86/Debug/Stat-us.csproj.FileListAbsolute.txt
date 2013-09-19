@@ -41,3 +41,15 @@ D:\Projects\c#\stat-us\Stat-us\bin\Debug\stats.mdb
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.AboutBox1.resources
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.Control.resources
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.Main.resources
+C:\stat-us.git\Stat-us\bin\Debug\Stat-us.exe.config
+C:\stat-us.git\Stat-us\obj\x86\Debug\Stat-us.exe
+C:\stat-us.git\Stat-us\obj\x86\Debug\Stat-us.pdb
+C:\stat-us.git\Stat-us\bin\Debug\stats.mdb
+C:\stat-us.git\Stat-us\bin\Debug\Stat-us.exe
+C:\stat-us.git\Stat-us\bin\Debug\Stat-us.pdb
+C:\stat-us.git\Stat-us\obj\x86\Debug\Stat-us.csprojResolveAssemblyReference.cache
+C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.AboutBox1.resources
+C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.Control.resources
+C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.Main.resources
+C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.Properties.Resources.resources
+C:\stat-us.git\Stat-us\obj\x86\Debug\Stat-us.csproj.GenerateResource.Cache
