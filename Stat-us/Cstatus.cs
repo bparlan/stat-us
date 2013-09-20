@@ -12,11 +12,6 @@ namespace Stat_us
 {
     class Cstatus
     {
-
-         /*
-          * Process EXE'leri Loadlıyor ve listeliyor
-          
-         
         public  List<String> GetProcesses()
         {
             List<String> programNames = new List<string>();
@@ -24,20 +19,22 @@ namespace Stat_us
 
             foreach (ManagementObject mo in MgmtClass.GetInstances())
             {
-                programNames.Add("Name: " + mo["Name"] + "\t\t ID: " + mo["ProcessId"] + "\t\t Path: " + mo["ExecutablePath"]);
-            }
+                //Eger ProgramDB'de benzeri varsa burada listelenmeyecek.
+                //Eger BlackListDB'de benzeri varsa burada listelenmeyecek.
+                //Eger Çift farsa temizlenecek.
 
+                programNames.Add(mo["Name"].ToString());
+                //programNames.Add("Name: " + mo["Name"] + "\t\t ID: " + mo["ProcessId"] + "\t\t Path: " + mo["ExecutablePath"]);
+            }
+            
             return programNames;
         }
-          */
-         
-
+          
         /*
          * WindowTitle'dan isimleri loadlarsak
          * 1- "windows" çalışmayan process'lerden kurtulmuş oluruz
          * 2- Process Name ile uğraşmadan düzgün uygulama ismi elde etmiş oluruz.
-         * */
-        /*
+         * 
          * Asıl amaç çalışan "exe" leri toplamak değil mi ?
          * eğer sadece windows ları alırsan elinde sadece title bilgisi olur oda sürekli değişebilir
          * örneğin chrome da şimdi youtube açık ve title olarak youtube yazıyor.

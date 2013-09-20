@@ -20,6 +20,7 @@ namespace Stat_us
                 this.connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=stats.MDB";
                 this.connection.Open();
             }
+
             catch (Exception ex)
             {
                 Console.WriteLine("Error: Failed to create a database connection. \n{0}", ex.Message);

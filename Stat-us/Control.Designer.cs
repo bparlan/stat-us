@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Control));
             this.lstApplications = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_trackit = new System.Windows.Forms.Button();
+            this.button_donttrack = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,23 +60,24 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Active Program List";
             // 
-            // button1
+            // button_trackit
             // 
-            this.button1.Location = new System.Drawing.Point(15, 295);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Track It";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_trackit.Location = new System.Drawing.Point(15, 295);
+            this.button_trackit.Name = "button_trackit";
+            this.button_trackit.Size = new System.Drawing.Size(75, 23);
+            this.button_trackit.TabIndex = 7;
+            this.button_trackit.Text = "Track It";
+            this.button_trackit.UseVisualStyleBackColor = true;
+            this.button_trackit.Click += new System.EventHandler(this.button_trackit_Click);
             // 
-            // button2
+            // button_donttrack
             // 
-            this.button2.Location = new System.Drawing.Point(15, 324);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Dont Track";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_donttrack.Location = new System.Drawing.Point(15, 324);
+            this.button_donttrack.Name = "button_donttrack";
+            this.button_donttrack.Size = new System.Drawing.Size(75, 23);
+            this.button_donttrack.TabIndex = 8;
+            this.button_donttrack.Text = "Dont Track";
+            this.button_donttrack.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -144,14 +145,14 @@
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView1.Location = new System.Drawing.Point(236, 25);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(305, 264);
+            this.dataGridView1.Size = new System.Drawing.Size(527, 264);
             this.dataGridView1.TabIndex = 15;
             // 
             // Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 438);
+            this.ClientSize = new System.Drawing.Size(775, 438);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -159,8 +160,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_donttrack);
+            this.Controls.Add(this.button_trackit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstApplications);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -177,8 +178,8 @@
 
         private System.Windows.Forms.ListBox lstApplications;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_trackit;
+        private System.Windows.Forms.Button button_donttrack;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

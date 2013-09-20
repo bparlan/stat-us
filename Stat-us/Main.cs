@@ -61,7 +61,6 @@ namespace Stat_us
 
             if (this.WindowState == FormWindowState.Maximized)
             {
-                MessageBox.Show("Form is maximized");
                 // handle it
             }
         }

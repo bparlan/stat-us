@@ -53,3 +53,4 @@ C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.Control.resources
 C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.Main.resources
 C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.Properties.Resources.resources
 C:\stat-us.git\Stat-us\obj\x86\Debug\Stat-us.csproj.GenerateResource.Cache
+C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.AddTracker.resources
