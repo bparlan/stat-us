@@ -9,8 +9,14 @@ namespace Stat_us
 {
     class Csessions
     {
-        private static statsDataSetTableAdapters.sessionsTableAdapter sessionTableAdapter = new statsDataSetTableAdapters.sessionsTableAdapter();
-        
+        private static statsDataSetTableAdapters.sessionsTableAdapter sessionTableAdapter;
+
+        static Csessions()
+        {
+            sessionTableAdapter = new statsDataSetTableAdapters.sessionsTableAdapter();
+            
+        }
+
         public static DataTable getAll()
         {
 
@@ -51,15 +57,9 @@ namespace Stat_us
 
         public static Double getTotalTime(int programId)
         {
-            double? time = sessionTableAdapter.getTotalTime(programId);
-            if (time != null)
-            {
-                return (Double)time;
-            }
-            else
-            {
-                return 0;
-            }
+            statsDataSetTableAdapters.sessionsTableAdapter ta = new statsDataSetTableAdapters.sessionsTableAdapter();
+            Double time = Convert.ToDouble(ta.getTotalTime(programId));
+            return time;
         }
 
         public static void delete(int programId)

@@ -10,6 +10,8 @@ namespace Stat_us
     class  Cprograms
     {
         private static statsDataSetTableAdapters.programsTableAdapter programsTableAdapter = new statsDataSetTableAdapters.programsTableAdapter();
+        
+
         public static DataTable getAll()
         {
 

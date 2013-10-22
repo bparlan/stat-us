@@ -48,7 +48,7 @@
             this.lstTracked.Name = "lstTracked";
             this.lstTracked.Size = new System.Drawing.Size(209, 329);
             this.lstTracked.TabIndex = 13;
-            this.lstTracked.Click += new System.EventHandler(this.lstTracked_Click);
+            this.lstTracked.SelectedIndexChanged += new System.EventHandler(this.lstTracked_Click);
             // 
             // lblProgramExe
             // 
