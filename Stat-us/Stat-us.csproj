@@ -81,14 +81,38 @@
       <DependentUpon>AddTracker.cs</DependentUpon>
     </Compile>
     <Compile Include="Ccategories.cs" />
-    <Compile Include="Cdatabase.cs" />
     <Compile Include="Cprograms.cs" />
+    <Compile Include="Csessions.cs" />
     <Compile Include="Cstatus.cs" />
     <Compile Include="Control.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Control.Designer.cs">
       <DependentUpon>Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmApplications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApplications.Designer.cs">
+      <DependentUpon>frmApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIgnoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIgnoring.Designer.cs">
+      <DependentUpon>frmIgnoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTracking.Designer.cs">
+      <DependentUpon>frmTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnconfirmed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnconfirmed.Designer.cs">
+      <DependentUpon>frmUnconfirmed.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -98,6 +122,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statsDataSet.cs">
+      <DependentUpon>statsDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="statsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>statsDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +145,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Control.resx">
       <DependentUpon>Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApplications.resx">
+      <DependentUpon>frmApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIgnoring.resx">
+      <DependentUpon>frmIgnoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTracking.resx">
+      <DependentUpon>frmTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnconfirmed.resx">
+      <DependentUpon>frmUnconfirmed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -119,6 +170,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -129,6 +183,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="statsDataSet.xsc">
+      <DependentUpon>statsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="statsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>statsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="statsDataSet.xss">
+      <DependentUpon>statsDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -136,7 +201,7 @@
   <ItemGroup>
     <Content Include="stats.ico" />
     <Content Include="stats.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

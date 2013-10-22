@@ -4,7 +4,10 @@ using System.Text;
 using System.Management;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Linq;
 using Microsoft.Win32;
+using System.Data;
+using System.Data.OleDb;
 
 
 
@@ -19,28 +22,39 @@ namespace Stat_us
 
             foreach (ManagementObject mo in MgmtClass.GetInstances())
             {
-                //Eger ProgramDB'de benzeri varsa burada listelenmeyecek.
-                //Eger BlackListDB'de benzeri varsa burada listelenmeyecek.
-                //Eger Çift farsa temizlenecek.
-
                 programNames.Add(mo["Name"].ToString());
                 //programNames.Add("Name: " + mo["Name"] + "\t\t ID: " + mo["ProcessId"] + "\t\t Path: " + mo["ExecutablePath"]);
             }
-            
+            programNames = programNames.Distinct().ToList();
+
             return programNames;
         }
+
+        public List<String> GetUnregistredProcesses()
+        {
+            List<String> programNames = new List<string>();
+            ManagementClass MgmtClass = new ManagementClass("Win32_Process");
+
+            foreach (ManagementObject mo in MgmtClass.GetInstances())
+            {
+                programNames.Add(mo["Name"].ToString());
+                //programNames.Add("Name: " + mo["Name"] + "\t\t ID: " + mo["ProcessId"] + "\t\t Path: " + mo["ExecutablePath"]);
+            }
+            programNames = programNames.Distinct().ToList();
+            DataTable dbPrograms = new DataTable();
+
+            dbPrograms = Cprograms.getAll();
+            
+            List<string> dbList = dbPrograms.AsEnumerable()
+                           .Select(r => r.Field<string>("exe"))
+                           .ToList();
+
+            List<String> difList = programNames.Except(dbList).ToList();
+
+            return difList;
+        }
           
-        /*
-         * WindowTitle'dan isimleri loadlarsak
-         * 1- "windows" çalışmayan process'lerden kurtulmuş oluruz
-         * 2- Process Name ile uğraşmadan düzgün uygulama ismi elde etmiş oluruz.
-         * 
-         * Asıl amaç çalışan "exe" leri toplamak değil mi ?
-         * eğer sadece windows ları alırsan elinde sadece title bilgisi olur oda sürekli değişebilir
-         * örneğin chrome da şimdi youtube açık ve title olarak youtube yazıyor.
-         * bence takip sistemi "exe" bazlı olmalı
-         */
-        
+       
         public  List<String>  GetApplications()
         {
             List<String> programNames = new List<string>();
@@ -59,20 +73,10 @@ namespace Stat_us
             return programNames;
         }
 
-        /*
-        public List<String> GetInstalled()
-        {
-            List<String> programNames = new List<string>();
-            ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT * FROM Win32_Product");
-            foreach (ManagementObject mo in mos.Get())
-            {
-                programNames.Add(mo["Name"].ToString());
-            }
 
-            return programNames;
-        }*/
-        /*
-        public List<String> GetInstalled2()
+        
+        
+        public List<String> GetInstalled()
         {
             string registry_key = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
             List<String> programNames = new List<string>();
@@ -94,7 +98,7 @@ namespace Stat_us
             }
 
             return programNames;
-        }*/
+        }
 
 
     }

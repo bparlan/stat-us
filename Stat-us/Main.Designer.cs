@@ -1,6 +1,6 @@
 ﻿namespace Stat_us
 {
-    partial class Main
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,73 +29,43 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.button_help = new System.Windows.Forms.Button();
-            this.button_about = new System.Windows.Forms.Button();
-            this.button_programcontrol = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button_exit = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnAbout = new System.Windows.Forms.Button();
+            this.btnProgramControl = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.button_close = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button_help
+            // btnHelp
             // 
-            this.button_help.Location = new System.Drawing.Point(13, 56);
-            this.button_help.Name = "button_help";
-            this.button_help.Size = new System.Drawing.Size(85, 23);
-            this.button_help.TabIndex = 1;
-            this.button_help.Text = "Help";
-            this.button_help.UseVisualStyleBackColor = true;
+            this.btnHelp.Location = new System.Drawing.Point(50, 183);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(108, 23);
+            this.btnHelp.TabIndex = 1;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
             // 
-            // button_about
+            // btnAbout
             // 
-            this.button_about.Location = new System.Drawing.Point(12, 85);
-            this.button_about.Name = "button_about";
-            this.button_about.Size = new System.Drawing.Size(86, 23);
-            this.button_about.TabIndex = 2;
-            this.button_about.Text = "About";
-            this.button_about.UseVisualStyleBackColor = true;
-            this.button_about.Click += new System.EventHandler(this.button3_Click);
+            this.btnAbout.Location = new System.Drawing.Point(50, 212);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(108, 23);
+            this.btnAbout.TabIndex = 2;
+            this.btnAbout.Text = "About";
+            this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
-            // button_programcontrol
+            // btnProgramControl
             // 
-            this.button_programcontrol.Location = new System.Drawing.Point(13, 13);
-            this.button_programcontrol.Name = "button_programcontrol";
-            this.button_programcontrol.Size = new System.Drawing.Size(85, 37);
-            this.button_programcontrol.TabIndex = 3;
-            this.button_programcontrol.Text = "Program Control";
-            this.button_programcontrol.UseVisualStyleBackColor = true;
-            this.button_programcontrol.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(122, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Total Time on PC:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(125, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Top 3 Programs:";
-            // 
-            // button_exit
-            // 
-            this.button_exit.Location = new System.Drawing.Point(12, 144);
-            this.button_exit.Name = "button_exit";
-            this.button_exit.Size = new System.Drawing.Size(86, 23);
-            this.button_exit.TabIndex = 6;
-            this.button_exit.Text = "Exit";
-            this.button_exit.UseVisualStyleBackColor = true;
-            this.button_exit.Click += new System.EventHandler(this.button1_Click);
+            this.btnProgramControl.Location = new System.Drawing.Point(50, 77);
+            this.btnProgramControl.Name = "btnProgramControl";
+            this.btnProgramControl.Size = new System.Drawing.Size(108, 23);
+            this.btnProgramControl.TabIndex = 3;
+            this.btnProgramControl.Text = "Settings";
+            this.btnProgramControl.UseVisualStyleBackColor = true;
+            this.btnProgramControl.Click += new System.EventHandler(this.btnProgramControl_Click);
             // 
             // notifyIcon1
             // 
@@ -104,48 +74,54 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
-            // button_close
+            // btnClose
             // 
-            this.button_close.Location = new System.Drawing.Point(12, 115);
-            this.button_close.Name = "button_close";
-            this.button_close.Size = new System.Drawing.Size(86, 23);
-            this.button_close.TabIndex = 7;
-            this.button_close.Text = "Close";
-            this.button_close.UseVisualStyleBackColor = true;
-            this.button_close.Click += new System.EventHandler(this.button5_Click);
+            this.btnClose.Location = new System.Drawing.Point(50, 106);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(108, 23);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnExit_click);
             // 
-            // Main
+            // btnReports
+            // 
+            this.btnReports.Location = new System.Drawing.Point(50, 48);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(108, 23);
+            this.btnReports.TabIndex = 8;
+            this.btnReports.Text = "Applications";
+            this.btnReports.UseVisualStyleBackColor = true;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(290, 179);
-            this.Controls.Add(this.button_close);
-            this.Controls.Add(this.button_exit);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button_programcontrol);
-            this.Controls.Add(this.button_about);
-            this.Controls.Add(this.button_help);
+            this.ClientSize = new System.Drawing.Size(211, 247);
+            this.Controls.Add(this.btnReports);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnProgramControl);
+            this.Controls.Add(this.btnAbout);
+            this.Controls.Add(this.btnHelp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Main";
+            this.Name = "frmMain";
             this.Text = "Stat.us | Main";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button_help;
-        private System.Windows.Forms.Button button_about;
-        private System.Windows.Forms.Button button_programcontrol;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button_exit;
+        private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Button btnProgramControl;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.Button button_close;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnReports;
 
         
     }

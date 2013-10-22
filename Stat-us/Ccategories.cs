@@ -9,20 +9,12 @@ namespace Stat_us
 {
     class Ccategories
     {
-        public Cdatabase db = new Cdatabase();
-       
-        public DataTable getAll()
+        public static statsDataSetTableAdapters.categoriesTableAdapter  categoriesTableAdapter = new statsDataSetTableAdapters.categoriesTableAdapter();
+        
+        public static DataTable getAll()
         {
             
-            DataTable dataTable = new DataTable();
-
-            OleDbCommand command = new OleDbCommand("select * from categories", db.connection);
-            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(command);
-
-            this.db.Connect();
-            dataAdapter.Fill(dataTable);
-            this.db.Disconnect();
-            return dataTable;
+            return categoriesTableAdapter.GetData();
         }
 
     }

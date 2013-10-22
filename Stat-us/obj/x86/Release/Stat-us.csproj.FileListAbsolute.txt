@@ -22,3 +22,4 @@ D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\GenerateResource.read.1.tlog
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\GenerateResource.write.1.tlog
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat-us.exe
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat-us.pdb
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat_us.frmAddTracker.resources

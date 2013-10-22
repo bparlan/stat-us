@@ -40,7 +40,6 @@ D:\Projects\c#\stat-us\Stat-us\bin\Debug\Stat-us.exe.config
 D:\Projects\c#\stat-us\Stat-us\bin\Debug\stats.mdb
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.AboutBox1.resources
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.Control.resources
-D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.Main.resources
 C:\stat-us.git\Stat-us\bin\Debug\Stat-us.exe.config
 C:\stat-us.git\Stat-us\obj\x86\Debug\Stat-us.exe
 C:\stat-us.git\Stat-us\obj\x86\Debug\Stat-us.pdb
@@ -54,3 +53,10 @@ C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.Main.resources
 C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.Properties.Resources.resources
 C:\stat-us.git\Stat-us\obj\x86\Debug\Stat-us.csproj.GenerateResource.Cache
 C:\stat-us.git\Stat-us\obj\x86\Debug\Stat_us.AddTracker.resources
+D:\Projects\c#\stat-us\Stat-us\obj\x86\Debug\Stat_us.frmAddTracker.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmSettings.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmTracking.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmIgnoring.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmUnconfirmed.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmApplications.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmMain.resources

@@ -14,55 +14,39 @@ using System.Windows.Forms;
 
 namespace Stat_us
 {
-    public partial class AddTracker : Form
+    public partial class frmAddTracker : Form
     {
 
-        public AddTracker()
+        public String programName = "program name";
+        public frmAddTracker()
         {
             InitializeComponent();
+            lblProgramExe.Text = programName;
         }
 
         
-        string secili_program_exe;
-        string secili_program_path;
-        int newprogramid;
-        string newprogramname;
+
 
         private void AddTracker_Load(object sender, EventArgs e)
         {
-            Control cForm = new Control();
-            cForm.secili_program_exe = this.secili_program_exe;
-            cForm.secili_program_path = this.secili_program_path;
-            cForm.newprogramid = this.newprogramid;
-            cForm.newprogramname = this.newprogramname;
+            lblProgramExe.Text = programName;
+            this.categoriesTableAdapter.Fill(this.statsDataSet.categories);
 
-            addtracker_label3.Text = secili_program_exe;
-
-            /*
-            OleDbConnection connection = new OleDbConnection();
-            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=stats.MDB";
-
-
-            OleDbCommand command = new OleDbCommand();
-            
-            command.CommandText = @"insert into programs ([programid], [name], [exe], [categorid], [path]) VALUES (?,?,?,?,?)";
-            command.CommandType = CommandType.Text;
-            command.Parameters.AddWithValue("programid",  newprogramid);
-            command.Parameters.AddWithValue("name", newprogramname);
-            command.Parameters.AddWithValue("exe", newprogramname);
-            command.Parameters.AddWithValue("categorid", newprogramid);
-            command.Parameters.AddWithValue("path", newprogramname);
-
-            command.Connection = connection;
-
-            connection.Open();
-
-            command.ExecuteNonQuery();
-
-            connection.Close();
-            */
 
         }
+
+        private void btnSaveProgram_Click(object sender, EventArgs e)
+        {
+            
+            Boolean isTracked = rdTrack.Checked;
+            int categoryId = (int)cmbCategory.SelectedValue;
+            Cprograms.insert(txtTitle.Text, this.programName, isTracked, "", categoryId, true);
+            this.Close();
+
+        }
+
+
+
 
     }
 }
