@@ -9,8 +9,13 @@ namespace Stat_us
 {
     class Ccategories
     {
-        public static statsDataSetTableAdapters.categoriesTableAdapter  categoriesTableAdapter = new statsDataSetTableAdapters.categoriesTableAdapter();
-        
+        public static statsDataSetTableAdapters.categoriesTableAdapter categoriesTableAdapter;
+
+        static Ccategories() 
+        {
+            categoriesTableAdapter = new statsDataSetTableAdapters.categoriesTableAdapter();
+        }
+
         public static DataTable getAll()
         {
             
