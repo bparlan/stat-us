@@ -8,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Timers;
+using System.Resources;
+using System.Reflection;
+using System.Threading;
+using System.Globalization;
 
 namespace Stat_us
 {
@@ -21,6 +25,9 @@ namespace Stat_us
 
         public frmMain()
         {
+
+            
+            
             //10 saniyelik timer, 10 saniye olmak zorunda
             iTimer = new System.Timers.Timer(Properties.Settings.Default.loopTime);
             iTimer.Enabled = true;
@@ -29,8 +36,15 @@ namespace Stat_us
             //bütün sessionları kapat
             Csessions.closeAll();
 
-            InitializeComponent();
+            //notify
+            
             this.SizeChanged += new EventHandler(form1_sizeeventhandler);
+            
+            //localization
+            //Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("tr-TR");
+            //MessageBox.Show(Strings.Hello);
+
+            InitializeComponent();
         
         }
 

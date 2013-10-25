@@ -137,6 +137,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>statsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,16 +154,28 @@
     <EmbeddedResource Include="frmApplications.resx">
       <DependentUpon>frmApplications.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmApplications.tr-TR.resx">
+      <DependentUpon>frmApplications.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIgnoring.resx">
       <DependentUpon>frmIgnoring.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTracking.resx">
       <DependentUpon>frmTracking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTracking.tr-TR.resx">
+      <DependentUpon>frmTracking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUnconfirmed.resx">
       <DependentUpon>frmUnconfirmed.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmUnconfirmed.tr-TR.resx">
+      <DependentUpon>frmUnconfirmed.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.tr-TR.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -173,6 +190,11 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.tr-TR.resx" />
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

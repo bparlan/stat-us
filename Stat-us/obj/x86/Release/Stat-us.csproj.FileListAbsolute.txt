@@ -23,3 +23,11 @@ D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\GenerateResource.write.1.tlog
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat-us.exe
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat-us.pdb
 D:\Projects\c#\stat-us\Stat-us\obj\x86\Release\Stat_us.frmAddTracker.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Release\Stat_us.frmApplications.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Release\Stat_us.frmIgnoring.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Release\Stat_us.frmTracking.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Release\Stat_us.frmUnconfirmed.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Release\Stat_us.lang.en_US.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Release\Stat_us.frmMain.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Release\Stat_us.frmSettings.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Release\Stat_us.lang.en.resources

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUnconfirmed));
             this.btnTrack = new System.Windows.Forms.Button();
             this.lstUnconfirmed = new System.Windows.Forms.ListBox();
             this.btnIgnore = new System.Windows.Forms.Button();
@@ -35,42 +36,32 @@
             // 
             // btnTrack
             // 
-            this.btnTrack.Location = new System.Drawing.Point(12, 346);
+            resources.ApplyResources(this.btnTrack, "btnTrack");
             this.btnTrack.Name = "btnTrack";
-            this.btnTrack.Size = new System.Drawing.Size(209, 27);
-            this.btnTrack.TabIndex = 17;
-            this.btnTrack.Text = "Track";
             this.btnTrack.UseVisualStyleBackColor = true;
             this.btnTrack.Click += new System.EventHandler(this.btnTrack_Click);
             // 
             // lstUnconfirmed
             // 
+            resources.ApplyResources(this.lstUnconfirmed, "lstUnconfirmed");
             this.lstUnconfirmed.FormattingEnabled = true;
-            this.lstUnconfirmed.Location = new System.Drawing.Point(12, 12);
             this.lstUnconfirmed.Name = "lstUnconfirmed";
-            this.lstUnconfirmed.Size = new System.Drawing.Size(209, 329);
-            this.lstUnconfirmed.TabIndex = 16;
             // 
             // btnIgnore
             // 
-            this.btnIgnore.Location = new System.Drawing.Point(12, 379);
+            resources.ApplyResources(this.btnIgnore, "btnIgnore");
             this.btnIgnore.Name = "btnIgnore";
-            this.btnIgnore.Size = new System.Drawing.Size(209, 27);
-            this.btnIgnore.TabIndex = 18;
-            this.btnIgnore.Text = "Ignore";
             this.btnIgnore.UseVisualStyleBackColor = true;
             this.btnIgnore.Click += new System.EventHandler(this.btnIgnore_Click);
             // 
             // frmUnconfirmed
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(233, 428);
             this.Controls.Add(this.btnIgnore);
             this.Controls.Add(this.btnTrack);
             this.Controls.Add(this.lstUnconfirmed);
             this.Name = "frmUnconfirmed";
-            this.Text = "Unconfirmed";
             this.Load += new System.EventHandler(this.frmUnconfirmed_Load);
             this.ResumeLayout(false);
 

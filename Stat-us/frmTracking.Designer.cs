@@ -28,37 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTracking));
             this.btnUntrack = new System.Windows.Forms.Button();
             this.lstTracked = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnUntrack
             // 
-            this.btnUntrack.Location = new System.Drawing.Point(12, 346);
+            resources.ApplyResources(this.btnUntrack, "btnUntrack");
             this.btnUntrack.Name = "btnUntrack";
-            this.btnUntrack.Size = new System.Drawing.Size(209, 27);
-            this.btnUntrack.TabIndex = 13;
-            this.btnUntrack.Text = "Ignore";
             this.btnUntrack.UseVisualStyleBackColor = true;
             this.btnUntrack.Click += new System.EventHandler(this.btnUntrack_Click);
             // 
             // lstTracked
             // 
+            resources.ApplyResources(this.lstTracked, "lstTracked");
             this.lstTracked.FormattingEnabled = true;
-            this.lstTracked.Location = new System.Drawing.Point(12, 12);
             this.lstTracked.Name = "lstTracked";
-            this.lstTracked.Size = new System.Drawing.Size(209, 329);
-            this.lstTracked.TabIndex = 12;
             // 
             // frmTracking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(235, 401);
             this.Controls.Add(this.btnUntrack);
             this.Controls.Add(this.lstTracked);
             this.Name = "frmTracking";
-            this.Text = "Tracking Applications";
             this.Load += new System.EventHandler(this.frmTracking_Load);
             this.ResumeLayout(false);
 
