@@ -71,8 +71,8 @@ namespace Stat_us
         {
 
 
-                notifyIcon1.BalloonTipTitle = "I'm Here!";
-                notifyIcon1.BalloonTipText = "I'll keep tracking from here without bothering you... Enjoy!";
+                notifyIcon1.BalloonTipTitle = Strings.Here;
+                notifyIcon1.BalloonTipText = Strings.TrayMessage;
 
                 if (this.WindowState == FormWindowState.Minimized)
                 {
@@ -155,7 +155,7 @@ namespace Stat_us
 
                     if (!(bool)dbProgram["is_confirmed"]) {
                         iTimer.Enabled = false;
-                        DialogResult result = MessageBox.Show("We are tracking this program, should we?", (String)dbProgram["exe"], MessageBoxButtons.YesNo);
+                        DialogResult result = MessageBox.Show(Strings.Tracking +" "+ (String)dbProgram["exe"], (String)dbProgram["exe"], MessageBoxButtons.YesNo);
                         if (result == DialogResult.Yes)
                         {
                             Cprograms.track((String)dbProgram["exe"]);

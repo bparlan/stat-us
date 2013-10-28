@@ -39,6 +39,7 @@ namespace Stat_us
             lstTracked.DisplayMember = "exe";
             lstTracked.ValueMember = "programid";
             
+            
         }
 
         private void lstTracked_Click(object sender, EventArgs e)
@@ -47,9 +48,14 @@ namespace Stat_us
             DataRowView program = (DataRowView)lstTracked.SelectedItem;
 
             Double dTime = Csessions.getTotalTime((int)program["programid"]);
+            int started = Csessions.getTotalStart((int)program["programid"]);
             TimeSpan time = TimeSpan.FromSeconds(dTime);
             
-            lblTotalTime.Text = time.ToString();
+                lblTotalTime.Text = time.Days.ToString() + " " + Strings.Day;
+                lblTotalTime.Text += " " + time.Hours.ToString() + " " + Strings.Hour;
+                lblTotalTime.Text += " " + time.Minutes.ToString() + " " + Strings.Minute;
+                lblTotalTime.Text += " " + time.Seconds.ToString() + " " + Strings.Second;
+                lblStarted.Text = started.ToString();
             
             cmbCategory.SelectedValue = (int)program["categoryid"];
             txtTitle.Text = program["name"].ToString().Trim();

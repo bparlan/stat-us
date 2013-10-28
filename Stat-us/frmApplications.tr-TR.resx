@@ -136,8 +136,14 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Toplam zaman :</value>
   </data>
+  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 327</value>
+  </data>
   <data name="btnReset.Text" xml:space="preserve">
     <value>Sıfırla</value>
+  </data>
+  <data name="txtTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 20</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>298, 81</value>
@@ -148,6 +154,9 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Başlık:</value>
   </data>
+  <data name="cmbCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 21</value>
+  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>287, 116</value>
   </data>
@@ -157,8 +166,14 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Kategori:</value>
   </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 140</value>
+  </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>Kaydet</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>546, 362</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Uygulamalar</value>

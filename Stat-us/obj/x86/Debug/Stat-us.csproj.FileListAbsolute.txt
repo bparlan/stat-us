@@ -68,3 +68,5 @@ D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.Strings.tr-TR.resources
 D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmApplications.tr-TR.resources
 D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmTracking.tr-TR.resources
 D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmUnconfirmed.tr-TR.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmIgnoring.tr-TR.resources
+D:\Projects\c#\Stat-us\Stat-us\obj\x86\Debug\Stat_us.frmSettings.tr-TR.resources

@@ -68,5 +68,10 @@ namespace Stat_us
         }
 
 
+
+        internal static int getTotalStart(int programId)
+        {
+            return Convert.ToInt32(sessionTableAdapter.getTotalStart(programId));
+        }
     }
 }

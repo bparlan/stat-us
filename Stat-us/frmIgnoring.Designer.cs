@@ -28,37 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIgnoring));
             this.btnTrack = new System.Windows.Forms.Button();
             this.lstIgnored = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnTrack
             // 
-            this.btnTrack.Location = new System.Drawing.Point(12, 346);
+            resources.ApplyResources(this.btnTrack, "btnTrack");
             this.btnTrack.Name = "btnTrack";
-            this.btnTrack.Size = new System.Drawing.Size(209, 27);
-            this.btnTrack.TabIndex = 15;
-            this.btnTrack.Text = "Track";
             this.btnTrack.UseVisualStyleBackColor = true;
             this.btnTrack.Click += new System.EventHandler(this.btnTrack_Click);
             // 
             // lstIgnored
             // 
+            resources.ApplyResources(this.lstIgnored, "lstIgnored");
             this.lstIgnored.FormattingEnabled = true;
-            this.lstIgnored.Location = new System.Drawing.Point(12, 12);
             this.lstIgnored.Name = "lstIgnored";
-            this.lstIgnored.Size = new System.Drawing.Size(209, 329);
-            this.lstIgnored.TabIndex = 14;
             // 
             // frmIgnoring
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 396);
             this.Controls.Add(this.btnTrack);
             this.Controls.Add(this.lstIgnored);
             this.Name = "frmIgnoring";
-            this.Text = "Ignoring";
             this.Load += new System.EventHandler(this.frmIgnoring_Load);
             this.ResumeLayout(false);
 

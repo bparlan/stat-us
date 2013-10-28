@@ -160,6 +160,9 @@
     <EmbeddedResource Include="frmIgnoring.resx">
       <DependentUpon>frmIgnoring.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmIgnoring.tr-TR.resx">
+      <DependentUpon>frmIgnoring.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTracking.resx">
       <DependentUpon>frmTracking.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +191,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.tr-TR.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Strings.resx">

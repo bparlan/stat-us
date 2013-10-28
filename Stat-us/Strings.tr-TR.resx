@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Day" xml:space="preserve">
+    <value>Gün</value>
+  </data>
   <data name="Hello" xml:space="preserve">
     <value>Merhaba</value>
+  </data>
+  <data name="Here" xml:space="preserve">
+    <value>Buradayım.</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>Saat</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>Dakika</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>Saniye</value>
+  </data>
+  <data name="Tracking" xml:space="preserve">
+    <value>Bu uygulamayı az önce kapattınız takip edilsin mi ?</value>
+  </data>
+  <data name="TrayMessage" xml:space="preserve">
+    <value>Sizi rahatsız etmeden çalışmaya devam ediyorum.</value>
   </data>
 </root>
