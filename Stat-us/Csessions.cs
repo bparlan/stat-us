@@ -62,6 +62,13 @@ namespace Stat_us
             return time;
         }
 
+        public static Double getTodayTotalTime(int programId)
+        {
+            statsDataSetTableAdapters.sessionsTableAdapter ta = new statsDataSetTableAdapters.sessionsTableAdapter();
+            Double time = Convert.ToDouble(ta.getTodayTotalTime(programId));
+            return time;
+        }
+
         public static void delete(int programId)
         {
             sessionTableAdapter.delete(programId);
@@ -71,7 +78,8 @@ namespace Stat_us
 
         internal static int getTotalStart(int programId)
         {
-            return Convert.ToInt32(sessionTableAdapter.getTotalStart(programId));
+            statsDataSetTableAdapters.sessionsTableAdapter ta = new statsDataSetTableAdapters.sessionsTableAdapter();
+            return Convert.ToInt32(ta.getTotalStart(programId));
         }
     }
 }

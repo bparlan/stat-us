@@ -42,6 +42,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblStarted = new System.Windows.Forms.Label();
+            this.lblToday = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,7 +104,7 @@
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(342, 201);
+            this.txtTitle.Location = new System.Drawing.Point(342, 169);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(204, 20);
             this.txtTitle.TabIndex = 19;
@@ -110,7 +112,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(303, 205);
+            this.label3.Location = new System.Drawing.Point(303, 173);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 20;
@@ -119,7 +121,7 @@
             // cmbCategory
             // 
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(342, 236);
+            this.cmbCategory.Location = new System.Drawing.Point(342, 204);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(204, 21);
             this.cmbCategory.TabIndex = 21;
@@ -127,7 +129,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(281, 239);
+            this.label4.Location = new System.Drawing.Point(281, 207);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 22;
@@ -135,7 +137,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(471, 263);
+            this.btnSave.Location = new System.Drawing.Point(471, 231);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 23;
@@ -170,11 +172,31 @@
             this.lblStarted.TabIndex = 26;
             this.lblStarted.Text = "started";
             // 
+            // lblToday
+            // 
+            this.lblToday.AutoSize = true;
+            this.lblToday.Location = new System.Drawing.Point(342, 96);
+            this.lblToday.Name = "lblToday";
+            this.lblToday.Size = new System.Drawing.Size(33, 13);
+            this.lblToday.TabIndex = 28;
+            this.lblToday.Text = "today";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(289, 96);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Today :";
+            // 
             // frmApplications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 382);
+            this.Controls.Add(this.lblToday);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.lblStarted);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
@@ -213,5 +235,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblStarted;
+        private System.Windows.Forms.Label lblToday;
+        private System.Windows.Forms.Label label7;
     }
 }

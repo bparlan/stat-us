@@ -3071,7 +3071,7 @@ namespace Stat_us.statsDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[10];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[11];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT sessionid, programid, start_time, end_time, is_finished FROM sessions";
@@ -3112,23 +3112,30 @@ namespace Stat_us.statsDataSetTableAdapters {
             this._commandCollection[6].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("programid", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "programid", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[7] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[7].Connection = this.Connection;
-            this._commandCollection[7].CommandText = "SELECT        COUNT(*) AS totalStart\r\nFROM            sessions\r\nWHERE        (pro" +
-                "gramid = ?)";
+            this._commandCollection[7].CommandText = "SELECT        SUM(Datediff(\'s\', start_time, end_time)) AS total_time\r\nFROM       " +
+                "     sessions\r\nWHERE        (start_time > cdate(DATEDIFF(\'d\', 0, NOW()))) AND (p" +
+                "rogramid = ?)";
             this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[7].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("programid", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "programid", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[8] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[8].Connection = this.Connection;
-            this._commandCollection[8].CommandText = "SELECT        SUM(Datediff(\'s\', start_time, end_time)) AS total_time\r\nFROM       " +
-                "     sessions\r\nWHERE        (programid = ?)";
+            this._commandCollection[8].CommandText = "SELECT        COUNT(*) AS totalStart\r\nFROM            sessions\r\nWHERE        (pro" +
+                "gramid = ?)";
             this._commandCollection[8].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[8].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("programid", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "programid", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[9] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[9].Connection = this.Connection;
-            this._commandCollection[9].CommandText = "UPDATE       sessions\r\nSET                end_time = DateAdd(\'s\', ?, end_time)\r\nW" +
-                "HERE        (programid = ?) AND (is_finished = false)";
+            this._commandCollection[9].CommandText = "SELECT        SUM(Datediff(\'s\', start_time, end_time)) AS total_time\r\nFROM       " +
+                "     sessions\r\nWHERE        (programid = ?)";
             this._commandCollection[9].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[9].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("passedSeconds", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "end_time", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[9].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_programid", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "programid", global::System.Data.DataRowVersion.Original, false, null));
+            this._commandCollection[9].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("programid", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "programid", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[10] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[10].Connection = this.Connection;
+            this._commandCollection[10].CommandText = "UPDATE       sessions\r\nSET                end_time = DateAdd(\'s\', ?, end_time)\r\nW" +
+                "HERE        (programid = ?) AND (is_finished = false)";
+            this._commandCollection[10].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("passedSeconds", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "end_time", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[10].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_programid", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "programid", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3505,8 +3512,42 @@ namespace Stat_us.statsDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual global::System.Nullable<int> getTotalStart(global::System.Nullable<int> programid) {
+        public virtual object getTodayTotalTime(global::System.Nullable<int> programid) {
             global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[7];
+            if ((programid.HasValue == true)) {
+                command.Parameters[0].Value = ((int)(programid.Value));
+            }
+            else {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<int> getTotalStart(global::System.Nullable<int> programid) {
+            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[8];
             if ((programid.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(programid.Value));
             }
@@ -3540,7 +3581,7 @@ namespace Stat_us.statsDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual global::System.Nullable<double> getTotalTime(global::System.Nullable<int> programid) {
-            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[8];
+            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[9];
             if ((programid.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(programid.Value));
             }
@@ -3575,7 +3616,7 @@ namespace Stat_us.statsDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int update(global::System.Nullable<int> passedSeconds, global::System.Nullable<int> Original_programid) {
-            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[9];
+            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[10];
             if ((passedSeconds.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(passedSeconds.Value));
             }

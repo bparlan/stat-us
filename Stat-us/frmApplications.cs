@@ -48,6 +48,8 @@ namespace Stat_us
             DataRowView program = (DataRowView)lstTracked.SelectedItem;
 
             Double dTime = Csessions.getTotalTime((int)program["programid"]);
+            Double dTodayTime = Csessions.getTodayTotalTime((int)program["programid"]);
+
             int started = Csessions.getTotalStart((int)program["programid"]);
             TimeSpan time = TimeSpan.FromSeconds(dTime);
             
@@ -59,6 +61,9 @@ namespace Stat_us
             
             cmbCategory.SelectedValue = (int)program["categoryid"];
             txtTitle.Text = program["name"].ToString().Trim();
+            TimeSpan todayTime = TimeSpan.FromSeconds(dTodayTime);
+            lblToday.Text = todayTime.ToString();
+            
 
         }
 
