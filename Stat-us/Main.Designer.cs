@@ -36,6 +36,7 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnClose = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
+            this.btnStatistics = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnHelp
@@ -77,10 +78,17 @@
             this.btnReports.UseVisualStyleBackColor = true;
             this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
+            // btnStatistics
+            // 
+            resources.ApplyResources(this.btnStatistics, "btnStatistics");
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnStatistics);
             this.Controls.Add(this.btnReports);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnProgramControl);
@@ -102,6 +110,7 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnReports;
+        private System.Windows.Forms.Button btnStatistics;
 
         
     }
